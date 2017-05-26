@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+  app:
+    image: golang:1.7-alpine
+    volumes:
+      - ./src:/go/src/go-with-compose
+    working_dir: /go/src/go-with-compose
+    # enables us to just run "docker-compose up"
+    command: go run main.go
