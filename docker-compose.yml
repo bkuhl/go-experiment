@@ -1,8 +1,8 @@
-version: "2"
+version: "3"
 
 services:
   app:
-    image: golang:1.7-alpine
+    image: golang:1.9-alpine
     volumes:
       - ./src:/go/src/go-with-compose
     working_dir: /go/src/go-with-compose
